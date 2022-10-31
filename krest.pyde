@@ -1,0 +1,6 @@
+size(600,600)
+ellipseMode(CORNER)
+strokeWeight(15)
+rotate(radians(45))
+ellipse(170,0,500,0)
+ellipse(420,-250,0,500)
