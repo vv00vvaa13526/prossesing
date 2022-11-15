@@ -1,0 +1,9 @@
+a = 301
+def setup():
+    size(600,600)
+    strokeWeight(15)
+def draw():
+    global a
+    stroke(random(0,255),random(0,255),random(0,255))
+    line(300,300,a,a)
+    a = a + 1
