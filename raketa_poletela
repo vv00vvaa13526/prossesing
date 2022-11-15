@@ -1,0 +1,20 @@
+a = 300
+def setup():
+    size(600,600)
+    strokeWeight(5)
+def draw():
+    global a
+    background(255)
+    fill(173,147,146)
+    translate(a,a)
+    rect(250,200,100,200)
+    fill(246,250,28)
+    triangle(250,200,350,200,300,140)
+    fill(86,181,214)
+    ellipse(300,257,50,50)
+    ellipse(300,343,50,50)
+    fill(255,38,0)
+    triangle(250,400,275,445,300,400)
+    triangle(300,400,325,445,350,400)
+    triangle(275,400,300,495,325,400)
+    a = a - 10
