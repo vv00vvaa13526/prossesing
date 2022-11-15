@@ -1,0 +1,33 @@
+y = 300
+x = 300
+c = 300
+v = 300
+g = 300
+f = 300
+s = 300
+k = 300
+def setup():
+    size (600,600)
+    frameRate(30)
+def draw():
+    background(255)
+    global x, y
+    fill(random(0,255),random(0,255),random(0,255))
+    ellipse(x,y,random(0,100),random(0,100))
+    x = x + 10
+    y = y + 10
+    global c, v
+    fill(random(0,255),random(0,255),random(0,255))
+    ellipse(c,v,random(0,100),random(0,100))
+    c = c - 10
+    v = v - 10
+    global g, f
+    fill(random(0,255),random(0,255),random(0,255))
+    ellipse(g,f,random(0,100),random(0,100))
+    g = g + 10
+    f = f - 10
+    global s, k
+    fill(random(0,255),random(0,255),random(0,255))
+    ellipse(s,k,random(0,100),random(0,100))
+    s = s - 10
+    k = k + 10
