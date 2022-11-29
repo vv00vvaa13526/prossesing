@@ -1,0 +1,41 @@
+a = 0
+r = 250
+g = 255
+b = 18
+def setup():
+    size(600,600)
+    noStroke()
+def draw():
+    global a, r, g, b
+    fill(r,g,b)
+    ellipse(300,300,a,a)
+    a = a + 1.5
+    if a == 600 :
+        r = 255
+        g = 255
+        b = 255
+    if a >= 600 :
+        fill(255)
+        rect(0,0,600,600)
+        fill(250,255,18)
+        ellipse(300,300,100,100)
+        fill(0)
+        translate(0,-200)
+        quad(265,290,335,290,320,310,280,310)
+        translate(-200,0)
+        translate(350,40)
+        rotate(radians(45))
+        translate(125,-300)
+        quad(265,290,335,290,320,310,280,310)
+        rotate(radians(45))
+        translate(130,-300)    
+        quad(265,290,335,290,320,310,280,310)
+        rotate(radians(45))
+        translate(125,-300)
+        quad(265,290,335,290,320,310,280,310)
+        rotate(radians(45))
+        translate(130,-300)    
+        quad(265,290,335,290,320,310,280,310)
+        rotate(radians(45))
+        translate(125,-300)
+        quad(265,290,335,290,320,310,280,310)
