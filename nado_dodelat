@@ -2,40 +2,76 @@ a = 0
 r = 250
 g = 255
 b = 18
+c = 0
+g = 0
+m = 0
+v = 0
+j = 0
+i = 0
+o = 0
+p = 0
+u = 0
+t = 0
+l = 0
+tr = 1
 def setup():
-    size(600,600)
+    fullScreen()
     noStroke()
 def draw():
-    global a, r, g, b
-    fill(r,g,b)
-    ellipse(300,300,a,a)
+    global a, r, g, b, c, g, m, v, j, i, o, p, u, t, l,tr
+    fill(250,255,18)
+    
+    ellipse(960,540,a,a)
     a = a + 1.5
-    if a == 600 :
-        r = 255
-        g = 255
-        b = 255
-    if a >= 600 :
+    
+    if a >= 75 :
         fill(255)
-        rect(0,0,600,600)
+        ellipse(960,540,c,c)
+        c = c + 1.5
+    if c >= 75 :
+        fill(20,232,2)
+        ellipse(960,540,g,g)
+        g = g + 1.5
+    if g >= 75 :
+        fill(255)
+        ellipse(960,540,m,m)
+        m = m + 1.5
+        #if m>= 1000:
+        #m=75
+        #g= 75
+
+    if m >= 75 :
         fill(250,255,18)
-        ellipse(300,300,100,100)
-        fill(0)
-        translate(0,-200)
-        quad(265,290,335,290,320,310,280,310)
-        translate(-200,0)
-        translate(350,40)
-        rotate(radians(45))
-        translate(125,-300)
-        quad(265,290,335,290,320,310,280,310)
-        rotate(radians(45))
-        translate(130,-300)    
-        quad(265,290,335,290,320,310,280,310)
-        rotate(radians(45))
-        translate(125,-300)
-        quad(265,290,335,290,320,310,280,310)
-        rotate(radians(45))
-        translate(130,-300)    
-        quad(265,290,335,290,320,310,280,310)
-        rotate(radians(45))
-        translate(125,-300)
-        quad(265,290,335,290,320,310,280,310)
+        ellipse(960,540,v,v)
+        v = v + 1.5
+        
+    if v >= 75 :
+        fill(255)
+        ellipse(960,540,j,j)
+        j = j + 1.5
+    if j >= 75 :
+        fill(20,232,2)
+        ellipse(960,540,i,i)
+        i = i + 1.5
+    if i >= 75 :
+        fill(255)
+        ellipse(960,540,o,o)
+        o = o + 1.5
+
+    if o >= 75 :
+        fill(250,255,18)
+        ellipse(960,540,p,p)
+        p = p + 1.5
+        
+    if p >= 75 :
+        fill(255)
+        ellipse(960,540,u,u)
+        u = u + 1.5
+    if u >= 75 :
+        fill(20,232,2)
+        ellipse(960,540,t,t)
+        t = t + 1.5
+    if t >= 75 :
+        fill(255)
+        ellipse(960,540,l,l)
+        l = l + 1.5
