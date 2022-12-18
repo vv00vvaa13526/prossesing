@@ -1,0 +1,11 @@
+a = 0
+x = 1080
+def setup():
+    fullScreen()
+    frameRate(999)
+def draw():
+    global a, x
+    x = x - 10
+    for a in range (120,0,-10) :
+        fill(random(0,255),random(0,255),random(0,255))
+        ellipse(960,540,x,x)
