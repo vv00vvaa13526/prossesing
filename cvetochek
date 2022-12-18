@@ -1,0 +1,10 @@
+a = 0
+def setup():
+    fullScreen()
+def draw():
+    global a 
+    translate(960,540)
+    for a in range(0,2001) :
+        fill(random(0,255),random(0,255),random(0,255))
+        rotate(a)
+        ellipse(100,100,99,15)
