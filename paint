@@ -1,5 +1,5 @@
 bg = 255
-t = 0
+x = 10
 r = 240
 g = 216
 b = 34
@@ -10,28 +10,80 @@ def setup():
 def draw():
     global r, g, b
     noStroke()
-    fill(59,32,242)
+    
+    fill(0,0,255)
     rect(0,0,50,50)
-    noStroke()
+    
+    fill(255,0,0)
+    rect(53,0,50,50)
+    
+    fill(240,216,34)
+    rect(106,0,50,50)
+    
+    fill(0,255,0)
+    rect(159,0,50,50)
+    
+    fill(75,39,155)
+    rect(212,0,50,50)
+    
+    fill(100,100,255)
+    rect(265,0,50,50)
+    
+    fill(255,255,0)
+    rect(318,0,50,50)
+    
+    fill(0,0,0)
+    rect(371,0,50,50)
+       
     fill(r,g,b)
     if mousePressed and (mouseButton == LEFT): 
-        r = 240
-        g = 216
-        b = 34
-        ellipse(mouseX,mouseY,10,10)
+        ellipse(mouseX,mouseY,x,x)
+    
     if mousePressed and (mouseButton == RIGHT): 
         r = 255
         g = 255
         b = 255
         ellipse(mouseX,mouseY,50,50)
+
 def mouseClicked():
     global r, g, b
-    if mouseX > 0 and mouseX < 50 and mouseY > 0 and mouseY < 50:
-        r = 59
-        g = 32
-        b = 242
-        
-
-        
-        
     
+    if mouseX > 53 and mouseX < 103 and mouseY > 0 and mouseY < 50:
+        r = 255
+        g = 0
+        b = 0
+    
+    if mouseX > 0 and mouseX < 50 and mouseY > 0 and mouseY < 50:
+        r = 0
+        g = 0
+        b = 255
+    
+    if mouseX > 106 and mouseX < 156 and mouseY > 0 and mouseY < 50:
+        r = 240
+        g = 216
+        b = 34
+        
+    if mouseX > 159 and mouseX < 209 and mouseY > 0 and mouseY < 50:
+        r = 0
+        g = 255
+        b = 0
+        
+    if mouseX > 212 and mouseX < 262 and mouseY > 0 and mouseY < 50:
+        r = 75
+        g = 39
+        b = 155
+        
+    if mouseX > 265 and mouseX < 315 and mouseY > 0 and mouseY < 50:
+        r = 100
+        g = 100
+        b = 255
+        
+    if mouseX > 318 and mouseX < 368 and mouseY > 0 and mouseY < 50:
+        r = 255
+        g = 255
+        b = 0
+        
+    if mouseX > 371 and mouseX < 421 and mouseY > 0 and mouseY < 50:
+        r = 0
+        g = 0
+        b = 0
