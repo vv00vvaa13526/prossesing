@@ -1,5 +1,6 @@
 bg = 255
 x = 10
+l = 1290
 r = 240
 g = 216
 b = 34
@@ -8,7 +9,7 @@ def setup():
     fullScreen()
     background(255)
 def draw():
-    global r, g, b
+    global r, g, b, x, l
     noStroke()
     
     fill(0,0,255)
@@ -34,6 +35,12 @@ def draw():
     
     fill(0,0,0)
     rect(371,0,50,50)
+    
+    fill(0,0,0)
+    textSize(30)
+    text(x,1250,40)
+    text("+",l,38)
+    text("-",1230,38)
        
     fill(r,g,b)
     if mousePressed and (mouseButton == LEFT): 
@@ -44,9 +51,15 @@ def draw():
         g = 255
         b = 255
         ellipse(mouseX,mouseY,50,50)
+        
+    if x >= 100:
+        l = 1304
+        
+    if x <= 10:
+        x = 10
 
 def mouseClicked():
-    global r, g, b
+    global r, g, b, x
     
     if mouseX > 53 and mouseX < 103 and mouseY > 0 and mouseY < 50:
         r = 255
@@ -87,3 +100,14 @@ def mouseClicked():
         r = 0
         g = 0
         b = 0
+        
+    if mouseX > 1290 and mouseX < 1315 and mouseY > 18 and mouseY < 38:
+        fill(255,255,255)
+        rect(1250,10,40,35)
+        x = x + 1
+        
+    if mouseX > 1230 and mouseX < 1251 and mouseY > 18 and mouseY < 38:
+        fill(255,255,255)
+        rect(1250,10,40,35)
+        x = x - 1
+        
