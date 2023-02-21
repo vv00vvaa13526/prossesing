@@ -64,8 +64,7 @@ def draw():
                 f = mouseY
                 fill(0,0,0)
                 ellipse(d,f,10,10)
-                k == 2
-    if k == 2
+                
         if mousePressed and (mouseButton == RIGHT):
             fill(255,255,255)
             ellipse(d,f,15,15)
@@ -73,7 +72,9 @@ def draw():
             rect(d,f,v,n)
             v = mouseX - d
             n = mouseY - f
-            k = 3
+            
+        if k == 3:
+            k = 0
             
     
     
@@ -109,6 +110,7 @@ def mouseClicked():
     global r, g, b, x, k
     
     if mouseX > 53 and mouseX < 103 and mouseY > 0 and mouseY < 50:
+        k = 0
         r = 255
         g = 0
         b = 0
@@ -117,39 +119,61 @@ def mouseClicked():
         r = 0
         g = 0
         b = 255
+        k = 0
     
     if mouseX > 106 and mouseX < 156 and mouseY > 0 and mouseY < 50:
         r = 240
         g = 216
         b = 34
+        k = 0
         
     if mouseX > 159 and mouseX < 209 and mouseY > 0 and mouseY < 50:
         r = 0
         g = 255
         b = 0
+        k = 0
         
     if mouseX > 212 and mouseX < 262 and mouseY > 0 and mouseY < 50:
         r = 75
         g = 39
         b = 155
+        k = 0
         
     if mouseX > 265 and mouseX < 315 and mouseY > 0 and mouseY < 50:
         r = 100
         g = 100
         b = 255
+        k = 0
         
     if mouseX > 318 and mouseX < 368 and mouseY > 0 and mouseY < 50:
         r = 255
         g = 255
         b = 0
+        k = 0
         
     if mouseX > 371 and mouseX < 421 and mouseY > 0 and mouseY < 50:
         r = 0
         g = 0
         b = 0
+        k = 0
         
     if mouseX > 424 and mouseX < 474 and mouseY > 0 and mouseY < 50:
         k = 1
+        
+    if k == 1:
+        for j in range (1,5,5):
+            d = mouseX
+            f = mouseY
+            fill(0,0,0)
+            ellipse(d,f,10,10)
+  
+        if mousePressed and (mouseButton == RIGHT):
+            fill(255,255,255)
+            ellipse(d,f,15,15)
+            stroke(0)
+            rect(d,f,v,n)
+            v = mouseX - d
+            n = mouseY - f
 
     if mouseX > 1290 and mouseX < 1315 and mouseY > 18 and mouseY < 38:
         fill(255,255,255)
