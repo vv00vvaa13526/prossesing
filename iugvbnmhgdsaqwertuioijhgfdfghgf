@@ -1,0 +1,48 @@
+a = 0
+x = 0
+def setup():
+    frameRate(5)
+    size(600,600)
+    background(0)
+def draw():
+    global x, a
+    y1=[1,32,64,96,128,160,192,224,256,288,320,352,384,416,448,480,512,544,576,608,640]
+    fill(255)
+    ellipse(50,y1[x],30,30)
+    fill(0)
+    ellipse(50,y1[x]-32,32,32)
+    fill(255)
+    ellipse(114,y1[x],30,30)
+    fill(0)
+    ellipse(114,y1[x]-32,32,32)
+    fill(255)
+    ellipse(178,y1[x],30,30)
+    fill(0)
+    ellipse(178,y1[x]-32,32,32)
+    fill(255)
+    ellipse(242,y1[x],30,30)
+    fill(0)
+    ellipse(242,y1[x]-32,32,32)
+    fill(255)
+    ellipse(306,y1[x],30,30)
+    fill(0)
+    ellipse(306,y1[x]-32,32,32)
+    fill(255)
+    ellipse(370,y1[x],30,30)
+    fill(0)
+    ellipse(370,y1[x]-32,32,32)
+    fill(255)
+    ellipse(434,y1[x],30,30)
+    fill(0)
+    ellipse(434,y1[x]-32,32,32)
+    fill(255)
+    ellipse(498,y1[x],30,30)
+    fill(0)
+    ellipse(498,y1[x]-32,32,32)
+    fill(255)
+    ellipse(562,y1[x],30,30)
+    fill(0)
+    ellipse(562,y1[x]-32,32,32)
+    x = x + 1
+    if x >= 21:
+        x = 0
