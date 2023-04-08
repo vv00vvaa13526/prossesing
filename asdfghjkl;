@@ -1,0 +1,22 @@
+def setup():
+    fullScreen()
+    background(255)
+def draw():
+    global x, a
+    col=["247,195,215","237,245,22","12,245,185"]
+    sizes_x=["x=726","x=468","x=236"]
+    sizes_y=["y=274","y=247","y=156"]
+    textSize(50)
+    fill(247,195,215)
+    rect(10,170,726,274)
+    for x in range(0,3):
+        translate(800,0)
+        text(col[x],-800,50)
+        text(sizes_x[x],-800,100)
+        text(sizes_y[x],-800,150)
+        if x == 0:
+            fill(237,245,22)
+            rect(10,170,468,247)
+        if x == 1:
+            fill(12,245,185)
+            rect(10,170,236,156)
