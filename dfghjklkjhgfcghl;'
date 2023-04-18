@@ -1,0 +1,43 @@
+x = [100,200,300,400,500,600,700,800,900,1000,1100,1200,1300] 
+x2 = [100,200,300,400,500,600,700,800,900,1000,1100,1200,1300] 
+pobeda=[u"йу вин",u"ти победеел",u"оооооооо"]
+spid=[1,2,2.5]
+r = 0
+d = 1
+f = 0
+h = 0
+
+def setup(): 
+    fullScreen()
+    background(0)
+def draw():
+    global r, d, f, h
+    fill(255,255,0)
+    ellipse(x[r],660,80,80)
+    fill(255,0,0)
+    for h in range(0,1,1):
+        ellipse(x2[f],d,50,50)
+        d = d + spid[1]
+        f = int(random(0,12))
+    
+    
+    
+    
+    
+    if mousePressed and (mouseButton == RIGHT):
+        background(0)
+        r = r + 1
+    if mousePressed and (mouseButton == LEFT):
+        background(0)
+        r = r - 1
+    if r >= 13:
+        r = 12
+    if r <= -1:
+        r = 0
+    
+    
+    
+    
+    
+    
+    
