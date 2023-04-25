@@ -1,0 +1,59 @@
+a = 910
+b = 980
+g = 255
+h = 1080
+t = 1010
+w = 1035
+m = 935
+j = 1080
+f = 0
+x = 0
+s = 0
+spsk=[1,2,3,4,5]
+
+
+
+
+
+def setup():
+    fullScreen()
+    background(0)
+def draw():
+    global a, b, g, j, m, w, t, h, f, x, s
+    fill(g)
+    rect(a,b,100,100)
+    fill(x)
+    quad(a,j,m-50,b,w-50,b,t,h)
+    if keyPressed:
+        if key == 'd':
+            f = 255
+            x = 0
+            g = 0
+            fill(f)
+            quad(a,j,m,b,w,b,t,h)
+            a = a + 2
+            t = t + 2
+            w = w + 2
+            m = m + 2
+    if keyPressed:
+        if key == 'a':
+            f = 0
+            x = 255
+            g = 0
+            fill(x)
+            quad(a,j,m-50,b,w-50,b,t,h)
+            a = a - 2
+            t = t - 2
+            w = w - 2
+            m = m - 2
+    if keyPressed:
+        if key == 'd':
+            f = 255
+            x = 0
+            g = 0
+            fill(f)
+            quad(a,j,m,b,w,b,t,h)
+            a = a + 2
+            t = t + 2
+            w = w + 2
+            m = m + 2
